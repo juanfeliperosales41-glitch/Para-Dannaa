@@ -86,7 +86,21 @@ Un simple mensaje terminó convirtiéndose en una de las mejores cosas que me ha
 <h2>Una carta para ti 💌</h2>
 <p id="letter"></p>
 </section>
+<section>
 
+<h2>✨ Cosas que me recuerdan a ti ✨</h2>
+
+<div class="card">📱 Instagram, porque ahí empezó todo.</div>
+
+<div class="card">🌙 Las noches hablando contigo.</div>
+
+<div class="card">🎵 Nuestra canción.</div>
+
+<div class="card">👀 Tus ojos.</div>
+
+<div class="card">❤️ Cualquier cosa que me haga pensar en ti.</div>
+
+</section>
 <section>
 <h2>Las razones por las que te amo ❤️</h2>
 <div class="card">❤️ Tus ojos</div>
@@ -105,12 +119,33 @@ Un simple mensaje terminó convirtiéndose en una de las mejores cosas que me ha
 <div class="card">💖 La primera vez que te dije "Te amo".</div>
 </div>
 </section>
+<section>
 
+<h2>🤫 Pequeñas confesiones</h2>
+
+<div class="card">
+A veces reviso el celular esperando encontrar un mensaje tuyo.
+</div>
+
+<div class="card">
+Todavía sonrío cuando veo tu nombre aparecer.
+</div>
+
+<div class="card">
+Hay momentos en los que simplemente me quedo pensando en ti.
+</div>
+
+<div class="card">
+Todavía me pongo nervioso cuando hablo contigo.
+</div>
+
+</section>
 <section>
 <h2>Mensaje secreto 👀</h2>
 <button class="btn" onclick="document.getElementById('secret').style.display='block'">No tocar</button>
 <div id="secret" class="secret">
-Eres la mejor casualidad que me ha pasado ❤️
+ La verdad...
+Todavía siento mariposas cuando hablo contigo ❤️
 </div>
 </section>
 
@@ -153,29 +188,61 @@ const m=Math.floor(diff/60000)%60;
 const s=Math.floor(diff/1000)%60;
 document.getElementById('counter').innerHTML=`${d} días ${h}h ${m}m ${s}s`;
 },1000);
+  <section>
+
+<h2>⭐ Mi recuerdo favorito</h2>
+
+<div class="card">
+
+Marzo de 2026.
+
+La primera vez que pude verte en persona.
+
+Porque fue el momento en el que dejaste de ser solamente alguien detrás de una pantalla y te convertiste en un recuerdo que siempre voy a guardar en mi corazón. ❤️
+
+</div>
+
+</section>
 
 const text=`Danna...
 
-Si alguien me hubiera dicho que un simple mensaje por Instagram iba a cambiar tanto mis días, probablemente no lo habría creído.
+La verdad no sé exactamente en qué momento pasó.
 
-Pero entonces apareciste tú.
+No sé si fue una conversación, una noche hablando contigo o simplemente el paso de los días.
 
-Lo primero que me enamoró fueron tus ojos y tu forma tan única de ser.
+Solo sé que poco a poco te convertiste en alguien demasiado importante para mí.
 
-Nunca voy a olvidar la primera vez que nos vimos en persona ni la primera vez que te dije "te amo".
+Todavía me acuerdo de cuando te escribí por Instagram.
 
-Gracias por cada conversación, cada sonrisa y cada momento.
+En ese momento jamás imaginé que terminarías siendo una de las personas más especiales de mi vida.
+
+Lo primero que llamó mi atención fueron tus ojos.
+
+Pero mientras más te conocía, más me enamoraba de tu forma tan única de ser.
+
+Nunca voy a olvidar la primera vez que nos vimos en persona.
+
+Y tampoco voy a olvidar la primera vez que te dije "te amo".
+
+Son recuerdos que siempre voy a guardar conmigo porque fueron momentos que significaron muchísimo para mí.
+
+Gracias por cada conversación.
+
+Gracias por cada sonrisa.
+
+Gracias por cada momento compartido.
 
 Me haces muy feliz.
 
 Te amo con todo mi corazón.
 
-Y quiero que sepas que para mí eres el amor de mi vida.
+Y quiero que sepas algo...
+
+Si pudiera volver al día en que te encontré, volvería a escribirte una y mil veces más.
 
 Con todo mi amor,
 
 Pipe ❤️`;
-
 let i=0;
 function type(){
 if(i<text.length){
@@ -185,7 +252,7 @@ setTimeout(type,30);
 type();
 
 function rain(){
-for(let i=0;i<80;i++){
+for(let i=0;i<150;i++)
 let h=document.createElement('div');
 h.className='heart';
 h.innerHTML='❤️';
